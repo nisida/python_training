@@ -1,2 +1,3 @@
-# python_training
-repository to train python
+# pythonプログラミング
+
+repository to python　programing
