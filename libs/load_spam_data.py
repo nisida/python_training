@@ -11,7 +11,7 @@ nltk.download('stopwords')
 #from gensim.corpora.dictionary import Dictionary
 import numpy as np
 
-def load_spamd_data(file_path):
+def load_spam_data(file_path):
     
     """ span.csvを読み込み, token id, label id を返す
     Args:
