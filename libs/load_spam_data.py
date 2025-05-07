@@ -69,13 +69,13 @@ def load_spam_data(file_path):
         all_token_ids.append(token_ids)
     print(all_token_ids[100])
 
-    # hamとspamのラベルを数値に置き換える hum : 1 , spam : 2
+    # hamとspamのラベルを数値に置き換える hum : 0 , spam : 1
     id_label = []
     for label in df[LABEL]:
         if label == "ham":
-            id_label.append(1)
+            id_label.append(0)
         else:
-            id_label.append(2)
+            id_label.append(1)
 
     #print("id_label # = ", id_label[100])
     #print("df[LABEL].values 100 = ", df[LABEL].values[100])
