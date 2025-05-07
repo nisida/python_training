@@ -79,3 +79,9 @@ def load_spamd_data(file_path):
 
     #print("id_label # = ", id_label[100])
     #print("df[LABEL].values 100 = ", df[LABEL].values[100])
+    
+    tr_id, tr_label = all_token_ids[0: len(all_token_ids) * 0.8], id_label[0: len(id_label) * 0.8]
+    t_id, t_label   = all_token_ids[len(all_token_ids) * 0.8:], id_label[len(id_label) * 0.8:]
+    
+    # 8:2 に比率で分割する
+    return tr_id, tr_label, t_id, t_label
